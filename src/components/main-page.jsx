@@ -1,5 +1,6 @@
 import { Fragment, React } from "react";
 import LeftSideBar from "./leftsidebar";
+import LeftSideBarWithICon from "././leftsidebar-icon";
 
 function MainPage(props) {
   return (
@@ -7,12 +8,7 @@ function MainPage(props) {
       <LeftSideBar />
       <main className="container">
         <div className="row p-3">
-          <div className="col-md-12 pl-3 pr-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
-            distinctio eveniet exercitationem repellat numquam, harum obcaecati?
-            Eaque dignissimos labore dolore voluptates odit ad repellendus id
-            consequatur hic animi? Deserunt, perferendis.
-          </div>
+          <div className="col-md-12 pl-3 pr-3"></div>
         </div>
       </main>
     </Fragment>

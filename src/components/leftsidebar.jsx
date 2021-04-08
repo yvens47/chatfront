@@ -1,7 +1,12 @@
+import LeftSideBarWithICon from "./leftsidebar-icon";
+
 function LeftSideBar(props) {
   return (
-    <aside className=" leftSidebar p-3">
-      <div className="left-sidebar-content">content here</div>
+    <aside className=" leftSidebar ">
+      <div className="sidebar">
+        <LeftSideBarWithICon />
+        <div className="box p-3">content here</div>
+      </div>
     </aside>
   );
 }
