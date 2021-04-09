@@ -1,12 +1,25 @@
+body {
+  background: gainsboro;
+}
+body,
+html {
+  height: 100%;
+}
+
 .App {
+  background: gainsboro;
+  height: 100%;
+  /* //min-height: 100vh; */
 }
 
 .leftSidebar {
   position: absolute;
-  height: 100%;
-  background: gray;
+  height: calc(100% - 50px);
+  background: gainsboro;
   min-width: 250px;
   width: 300px;
+  display: flex;
+  flex: 1 1 auto;
 }
 .leftSidebar-icon {
   display: inline;
@@ -20,4 +33,86 @@
   width: 100%;
   flex: 1 1 auto;
   flex-direction: row;
+  box-shadow: -1px 0px 2px 0.5px #5d5a5a;
+}
+.box-icon {
+  width: 80px;
+
+  min-height: 100%;
+  background: gainsboro;
+  padding: 20px;
+  box-shadow: -1px 0px 2px 0.5px #5d5a5a;
+}
+.chat-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 90vh;
+  background: gainsboro;
+}
+
+.chat-box-wrapper {
+  position: absolute;
+  background: white;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+}
+.chat-box-wrapper-msg {
+  position: absolute;
+  bottom: 50px;
+  background: none;
+  height: 80%;
+  width: 100%;
+}
+.incoming-Message {
+  background: #9caba755;
+  padding: 20px;
+  border-radius: 40px;
+  width: 70%;
+  position: absolute;
+  bottom: 180px;
+  left: 10px;
+}
+.outgoing-Message {
+  background: #f1f1f155;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 40px;
+  width: 70%;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+}
+@media (max-width: 575.98px) {
+  .sidebar {
+    display: none;
+  }
+  .leftSidebar {
+    height: 100%;
+
+    min-width: 90px;
+    width: 80px;
+    display: flex;
+    flex: 1 1 auto;
+    background: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .left-sidebar-content {
+    width: 55px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
