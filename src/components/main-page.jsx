@@ -1,4 +1,4 @@
-import { Fragment, React } from "react";
+import { Fragment, React, useEffect } from "react";
 import LeftSideBar from "./leftsidebar";
 import LeftSideBarWithICon from "././leftsidebar-icon";
 import PrimarySearchAppBar from "./navbar";
@@ -8,6 +8,8 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import SendIcon from "@material-ui/icons/Send";
 import Avatar from "@material-ui/core/Avatar";
+import io from "socket.io-client";
+let socket;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +22,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function MainPage(props) {
+  useEffect(() => {
+    socket = io("localhost:5000");
+    socket.connect();
+    console.log(socket);
+  }, []);
   const classes = useStyles();
   return (
     <Fragment>

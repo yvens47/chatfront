@@ -60,7 +60,7 @@ html {
 }
 .chat-box-wrapper-msg {
   position: absolute;
-  bottom: 50px;
+  bottom: 10%;
   background: none;
   height: 80%;
   width: 100%;
@@ -68,10 +68,10 @@ html {
 .incoming-Message {
   background: #9caba755;
   padding: 20px;
-  border-radius: 40px;
+  border-radius: 30px;
   width: 70%;
   position: absolute;
-  bottom: 180px;
+  bottom: 20%;
   left: 10px;
 }
 .outgoing-Message {
@@ -81,7 +81,7 @@ html {
   border-radius: 40px;
   width: 70%;
   position: absolute;
-  bottom: 50px;
+  bottom: 5%;
   right: 10px;
 }
 @media (max-width: 575.98px) {
